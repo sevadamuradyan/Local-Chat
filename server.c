@@ -12,7 +12,7 @@
 #define True   1
 #define False  0
 
-void signal_pipe_hand(){
+void signal_pipe(){
     printf("%s\n", "-");
 }
 
@@ -76,7 +76,7 @@ int main(int argc , char *argv[])
     addrlen = sizeof(address);
     puts("Waiting for connections ...");
     
-    signal(SIGPIPE,signal_pipe_hand);
+    signal(SIGPIPE,signal_pipe);
 
     while(True) 
     {
