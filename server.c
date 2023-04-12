@@ -23,7 +23,7 @@ int main(int argc , char *argv[])
     int max_sd;
     struct sockaddr_in address;
     int chat = 0;
-    char buffer[128];  
+    char buffer[1024];  
      
 
     if(argc > 1){
