@@ -33,7 +33,7 @@ void *receive(void *data)
 	while(recv(sock,buffer,sizeof(buffer),0))
 	{
 
-		if(strncmp(buffer,name,sizeof(name)))
+		if(strncmp(buffer,name,sizeof(*name)))
 		{	
 			printf("# %s ",buffer);
 			printf("\n");
